@@ -45,7 +45,7 @@
         <div class="col-2">
             <div class="input-group mb-3 "">
                 <span class="input-group-text" id="inputGroup-sizing-default">Data di uscita</span>
-                <input id="sale_date" type="text" name="sale_date" class="form-control" aria-label="Sizing example input"
+                <input id="sale_date" type="date" name="sale_date" class="form-control" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-default">
             </div>
         </div>
