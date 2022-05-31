@@ -19,7 +19,7 @@ class CreateBooksTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('thumb');
-            $table->decimal('price',8,6,2);
+            $table->decimal('price',8,2,6);
             $table->string('series');
             $table->date('sale_date');
             $table->string('type');
