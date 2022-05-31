@@ -26,7 +26,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**
@@ -37,7 +37,11 @@ class PageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data=$request->all();
+        $new_book=new Book();
+        $new_book->fill($data);
+        $new_book->save();
+        return redirect()->route('book.show',$new_book);
     }
 
     /**
@@ -48,7 +52,8 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        //
+        $book=Book::findOrFail($id);
+        return view('show', compact('book'));
     }
 
     /**

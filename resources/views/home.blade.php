@@ -14,8 +14,8 @@
           <li class="list-group-item bg-success text-white">Prezzo: {{$book->price}}$</li>
         </ul>
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="{{route('book.show', $book->id)}}" class="btn btn-danger">Maggiori info</a>
+          <a href="#" class="btn btn-danger">Another link</a>
         </div>
     </div>
 
