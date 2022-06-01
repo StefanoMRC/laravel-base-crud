@@ -16,7 +16,7 @@ class PageController extends Controller
     {
         $books=Book::all();
         
-        return view('home', compact('books'));
+        return view('index', compact('books'));
     }
 
     /**

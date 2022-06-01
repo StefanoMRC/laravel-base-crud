@@ -1,6 +1,6 @@
 @extends('layout.layout')
 @section('cont')
-<div class="row">
+<div class="row justify-content-center">
     @forelse ($books as $book)
     <div class="card m-4 p-0 bg-success text-white" style="width: 18rem;">
         <img src="{{$book->thumb}}" class="card-img-top" alt="...">
